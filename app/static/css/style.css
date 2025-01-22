@@ -22,7 +22,6 @@
     background-color: #ffffff3d;
     box-shadow: 0px 5px 10px #00000044;
     border-radius: 15px;
-    padding: 3em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -62,7 +61,7 @@
 .login > form > input {
     padding: .6em;
     font-size: 1.5em;
-    width: 20vw;
+    width: 40vh;
     border-radius: 5px;
     border: none;
 }
@@ -106,10 +105,17 @@
 }
 
 .cadastro > h1 {
+    color: #fff;
+    font-size: 3em;
+    text-align: center;
+}
+
+.cadastro > h2 {
     font-size: 3em;
     color: #fff;
     text-align: center;
     text-decoration: underline;
+    margin-top: 10px;
 }
 
 .cadastro > form {
@@ -157,4 +163,84 @@
     color: #fff;
     background-color: #04acfa;
     cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    .login > h1 {
+        font-size: 1.5em;
+    }
+
+    .login > h2 {
+        font-size: 1.5em;
+    }
+
+    .login > form > label {
+        font-size: 1em;
+        margin-left: 1.2em;
+    }
+
+    .login > form > input {
+        width: 40vw;
+        font-size: 1em;
+    }
+
+    .login > form > p {
+        font-size: 1em;
+        margin-left: 1.2em;
+    }
+
+    .login > form > button {
+        padding: .5em;
+        font-size: 1em;
+    }
+
+    .cadastro > h1 {
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .cadastro > h2 {
+        font-size: 1.5em;
+    }
+
+    .cadastro > form > label {
+        font-size: 1em;
+    }
+
+    .cadastro > form > input {
+        width: 40vw;
+        font-size: 1em;
+    }
+
+    .cadastro > form > p {
+        font-size: 1em;
+    }
+
+    .cadastro > form > button {
+        padding: .5em;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 700px) {
+    .login {
+        width: 80vw;
+    }
+
+    .login > form > input {
+        width: 70vw;
+    }
+
+    .cadastro {
+        width: 80vw;
+    }
+
+    .cadastro > form > input {
+        width: 70vw;
+    }
+
+    .cadastro > h1 {
+        font-size: 1.2em;
+    } 
+
 }
