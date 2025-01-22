@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+
+</head>
+
+<body>
+    
+    <div class="container">
+
+        <div class="login" id="login">
+
+            <h1>SISTEMA DE CADASTRO</h1>
+
+            <h2>LOGIN</h2>
+
+            <form action="{{url_for('submit_login')}}" method="POST">
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+
+                <label for="email">Password:</label>
+                <input type="password" name="password" id="password" required>
+
+                <p>Não tem uma conta? <a href="#" onclick="cadastrar()">Clique aqui para cadastrar</a></p>
+
+                <button type="submit">Login</button>
+
+            </form>
+
+        </div>
+
+        <div class="cadastro" id="cadastro">
+
+            <h1>CADASTRO</h1>
+
+            <form action="{{url_for('submit_cadastro')}}" method="POST">
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" required>
+
+                <p>Já tem uma conta? <a href="#" onclick="login()">Clique aqui para fazer login</a></p>
+
+                <button type="submit">Cadastrar</button>
+
+            </form>
+
+        </div>
+
+
+    </div>
+
+    <script src="../static/js/script.js"></script>
+
+</body>
+
+</html>

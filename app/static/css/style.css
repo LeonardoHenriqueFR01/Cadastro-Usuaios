@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../imagens/fundo-login.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.login {
+    height: 60vh;
+    width: 50vw;
+    backdrop-filter: blur(10px);
+    background-color: #ffffff3d;
+    box-shadow: 0px 5px 10px #00000044;
+    border-radius: 15px;
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login > h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 3em;
+}
+
+.login > h2 {
+    color: #fff;
+    font-size: 3em;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 10px;
+}
+
+.login > form {
+    height: 40vh;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login > form > label {
+    color: #fff;
+    align-self: flex-start;
+    font-size: 1.7em;
+    margin-top: 15px;
+}
+
+.login > form > input {
+    padding: .6em;
+    font-size: 1.5em;
+    width: 20vw;
+    border-radius: 5px;
+    border: none;
+}
+
+.login > form > p {
+    font-size: 1.3em;
+    margin-top: 7px;
+    color: #fff;
+}
+
+.login > form > p > a {
+    text-decoration: none;
+}
+
+.login > form > button {
+    padding: 1em;
+    font-size: 1.5em;
+    font-weight: bold;
+    width: 15vh;
+    margin-top: 20px;
+    border: none;
+    border-radius: 15px;
+    color: #fff;
+    background-color: #04acfa;
+    cursor: pointer;
+}
+
+.cadastro {
+    height: 60vh;
+    width: 50vw;
+    backdrop-filter: blur(10px);
+    background-color: #ffffff3d;
+    box-shadow: 0px 5px 10px #00000044;
+    border-radius: 15px;
+    padding: 3em;
+    display: flex;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cadastro > h1 {
+    font-size: 3em;
+    color: #fff;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.cadastro > form {
+    height: 40vh;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cadastro > form > label {
+    color: #fff;
+    align-self: flex-start;
+    font-size: 1.7em;
+    margin-top: 15px;
+}
+
+.cadastro > form > input {
+    padding: .6em;
+    font-size: 1.5em;
+    width: 20vw;
+    border-radius: 5px;
+    border: none;
+}
+
+.cadastro > form > p {
+    font-size: 1.3em;
+    margin-top: 7px;
+    color: #fff;
+}
+
+.cadastro > form > p > a {
+    text-decoration: none;
+}
+
+.cadastro > form > button {
+    padding: 1em;
+    font-size: 1.5em;
+    font-weight: bold;
+    width: 15vh;
+    margin-top: 20px;
+    border: none;
+    border-radius: 15px;
+    color: #fff;
+    background-color: #04acfa;
+    cursor: pointer;
+}
