@@ -1,27 +1,2 @@
 # Auto detect text files and perform LF normalization
 * text=auto
-
-# Diretório do ambiente virtual
-venv/
-
-# Arquivos de configuração do Python
-*.pyc
-*.pyo
-*.pyd
-__pycache__/
-
-# Arquivos do sistema operacional
-.DS_Store    # macOS
-Thumbs.db    # Windows
-
-# Arquivos de log
-*.log
-
-# Arquivos temporários de editores de texto
-*.swp        # Vim
-.idea/       # JetBrains IDEs (como PyCharm)
-.vscode/     # Visual Studio Code
-
-# Arquivos de cache
-.cache/
-*.bak
