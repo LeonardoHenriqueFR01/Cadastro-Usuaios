@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    height: 100vh;
+    background-image: url(/static/imagens/background-photo.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-cadastro {
+    backdrop-filter: blur(10px);
+    background-color: #ffffff15;
+    height: 60vh;
+    width: 30vw;
+    border-radius: 10px;
+    padding: 1.5em;
+}
+
+.content-cadastro > h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 2.5em;
+}
+
+.content-cadastro > form {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-cadastro > form > .info-cadastro {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-cadastro > form > .info-cadastro > label {
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.content-cadastro > form > .info-cadastro > input {
+    padding: .6em;
+    font-size: 1.5em;
+    width: 20vw;
+}   
+
+.content-cadastro > form > p {
+    font-size: 1.5em;
+    color: #fff;
+    margin-top: 40px;
+}
+.content-cadastro > form > p > a {
+    text-decoration: none;
+    color: #05b8ff;
+}
+
+.content-cadastro > form > button {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: .7em;
+    margin-top: 20px;
+    border: none;
+    border-radius: 7px;
+    color: #fff;
+    background-color: #05b8ff;
+}
+
+/* Modificações para login */
+
+.content-login {
+    backdrop-filter: blur(10px);
+    background-color: #ffffff15;
+    height: 60vh;
+    width: 30vw;
+    border-radius: 10px;
+    padding: 1.5em;
+    display: none;
+}
+
+.content-login > h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 2.5em;
+}
+
+.content-login > form {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-login > form > .info-login {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-login > form > .info-login > label {
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.content-login > form > .info-login > input {
+    padding: .6em;
+    font-size: 1.5em;
+    width: 20vw;
+}   
+
+.content-login > form > p {
+    font-size: 1.5em;
+    color: #fff;
+    margin-top: 40px;
+}
+.content-login > form > p > a {
+    text-decoration: none;
+    color: #05b8ff;
+}
+
+.content-login > form > button {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: .7em;
+    margin-top: 20px;
+    border: none;
+    border-radius: 7px;
+    color: #fff;
+    background-color: #05b8ff;
+}
