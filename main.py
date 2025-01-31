@@ -1,8 +1,6 @@
-from app import create_app
-from app.routes import configure_routes
+from app import app
+from app import routes
 
-app = create_app()
-configure_routes(app)
 
 if __name__ == "__main__":
     app.run(debug=True)
