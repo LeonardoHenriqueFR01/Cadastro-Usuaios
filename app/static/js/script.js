@@ -1,5 +1,5 @@
 // Função para gerar interface de login
-function login() {
+function Login() {
     
     // Pegando a interface de cadastro
     const cadastro = document.getElementById('cadastro')
@@ -16,7 +16,7 @@ function login() {
 }
 
 // Função para gerar interface de cadastro
-function cadastro() {
+function Cadastro() {
     
     // Pegando a interface de cadastro
     const cadastro = document.getElementById('cadastro')

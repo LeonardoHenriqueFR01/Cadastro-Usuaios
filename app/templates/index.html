@@ -2,80 +2,67 @@
 <html lang="pt-br">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/static/css/index.css">
-
+    <title>Autenticação</title>
+    <link rel="stylesheet" href="../static/css/index.css">
 </head>
 
 <body>
 
+    <!-- Bloco para exibir mensagens -->
+    {% if message %}
+        <div class="messages">
+            <div class="alert alert-{{ message_type }}">{{ message }}</div>
+        </div>
+    {% endif %}
+
     <div class="container">
-
+        <!-- Bloco de cadastro -->
         <div class="content-cadastro" id="cadastro">
-
             <h1>Cadastro</h1>
-
             <form action="/submit" method="POST" autocomplete="off">
-
                 <input type="hidden" name="form_type" value="cadastro">
 
                 <div class="info-cadastro">
-                
                     <label for="name">Nome:</label>
                     <input type="text" name="name" id="name" required>
-                
+
                     <label for="email">Email:</label>
                     <input type="email" name="email" id="email" required>
-                
+
                     <label for="password">Senha:</label>
-                    <input type="password" name="password" id="password">
-                
+                    <input type="password" name="password" id="password" required>
                 </div>
 
-                <p>Já tem uma conta? <a href="#" onclick="login()">Clique aqui para fazer login</a></p>
-
-                <button>Cadastrar</button>
-
+                <p>Já tem uma conta? <a href="#" onclick="Login()">Clique aqui para fazer login</a></p>
+                <button type="submit">Cadastrar</button>
             </form>
-
         </div>
 
-        <div class="content-login" id="login">
-
+        <!-- Bloco de login -->
+        <div class="content-login" id="login" style="display: none;">
             <h1>Login</h1>
-
             <form action="/submit" method="POST" autocomplete="off">
-
                 <input type="hidden" name="form_type" value="login">
 
                 <div class="info-login">
-                
-                    <label for="name">Nome:</label>
-                    <input type="text" name="name" id="name" required>
-                
                     <label for="email">Email:</label>
                     <input type="email" name="email" id="email" required>
-                
+
                     <label for="password">Senha:</label>
-                    <input type="password" name="password" id="password">
-                
+                    <input type="password" name="password" id="password" required>
                 </div>
 
-                <p>Não tem uma conta? <a href="#" onclick="cadastro()">Clique aqui para fazer um cadastro</a></p>
-
-                <button>Login</button>
-
+                <p>Não tem uma conta? <a href="#" onclick="Cadastro()">Clique aqui para fazer um cadastro</a></p>
+                <button type="submit">Login</button>
             </form>
-
         </div>
 
     </div>
 
-    <script src="/static/js/script.js"></script>
-    
+    <script src="../static/js/script.js"></script>
+
 </body>
 
 </html>
